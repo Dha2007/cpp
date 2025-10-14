@@ -1,0 +1,41 @@
+                        #include<iostream>
+                        using namespace std;
+                      class person{
+	              protected:
+		string name;
+		char gender;
+		int age;
+		   public:
+			void getp(){
+				cout<<"Enter name,age,gender ";
+				cin>>name>>age>>gender;
+			}
+			void showp(){
+				cout<<"name = "<<name<<endl;
+				cout<<"age = "<<age<<endl;
+				cout<<"gender = "<<gender<<endl;
+			}
+                         };
+                   class faculty:public person
+                    {
+	       private:
+		int empid;
+		float exp;
+		public:
+			void getf(){
+				getp();
+				empid=501;
+				exp=10;
+			}
+			void showf(){
+				showp();
+				cout<<"empid="<<empid<<endl;
+				cout<<"exp="<<exp<<endl;
+			}
+                                };
+                    int main(){
+            	faculty f;
+	            f.getf();
+                	f.showf();
+	            return 0;
+                      }
