@@ -1,0 +1,17 @@
+#include <iostream>
+                      using namespace std;
+                      class Rectangle{
+                	private:
+		int l,b;
+		public:
+			void input(int l,int b){
+				this->l=l;
+				this->b=b; }
+			void area(){
+				cout<<"Area of rectangle = "<<l*b<<endl; }
+                             };
+                               int main(){
+	                  Rectangle r;
+	                    r.input(10,40);
+	                   r.area();
+                            }
