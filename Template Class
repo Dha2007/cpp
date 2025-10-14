@@ -1,0 +1,28 @@
+#include<iostream>
+                          using namespace std;
+                          template<class T>
+                         class sample{
+	             private:
+		          T x;
+		           public:
+			 void get(){
+				cin>>x;
+			}
+			void show(){
+				cout<<x<<endl;
+			}
+                           };
+                    int main(){
+	         cout<<"enter int value";
+	         sample <int>s1;
+	           s1.get();
+	           s1.show();
+	           cout<<"enter float value";
+	          sample <float>s2;
+	          s2.get();
+	          s2.show();
+	            cout<<"enter char value";
+	           sample <char>s3;
+	           s3.get();
+	            s3.show();
+                     }
